@@ -92,6 +92,7 @@ aside h2 {
   flex: 1;
   padding: 20px;
   transition: 0.3s;
+  overflow-y: auto;
 }
 
 .month-control {
@@ -129,6 +130,8 @@ aside h2 {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 10px;
+  padding-bottom: 20px;
+  overflow-y: auto;
 }
 
 .day {
@@ -137,7 +140,8 @@ aside h2 {
   display: flex;
   justify-content: start;
   align-items: start;
-  height: 80px;
+  min-height: 80px;
+  height: auto;
   font-size: 1.1rem;
   cursor: pointer;
   transition: 0.2s;
